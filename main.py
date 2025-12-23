@@ -33,5 +33,7 @@ def main():
         else:
             print("Invalid Input")
 
+
+    # main.py will onlyactivate when player is in this file
 if __name__ == "__main__":
     main()
