@@ -52,11 +52,13 @@ def start(words):
             print(f"Please enter a {len(secret)}-letter word.")
             continue
 
+        # make sure the player can't put in random words
         if guess not in check_words:
             print("Sorry, word is not in our dictionary")
             print("Try again")
             continue
 
+        # win condition
         if guess == secret:
             end_time = time.time()
             time_taken = end_time - start_time
@@ -94,6 +96,7 @@ def start(words):
             if max_try < 7:
                 print(f"Incorrect, you have {tries_left} tries left")
 
+        # losing condition
         if max_try == 7 and guess != secret:
             end_time = time.time()
             time_taken = end_time - start_time

@@ -14,6 +14,7 @@ def main():
 
         choice = input("Enter number: ")
 
+        # difficulty choice
         if choice == "1":
             import game_easy as game
             words = Word_list
