@@ -2,6 +2,7 @@ import time
 import sys
 from word_check import check_words
 
+# This block code is made using AI ChatGPT 5.1 (# End will mark how far the code is AI)
 def definer(secret, guess):
     result = ["absent"] * len(secret) # makes the guessed word into separate characters like ["absent", "absent"] depending on how long the word is
     secret_list = list(secret)
@@ -32,6 +33,7 @@ def arranger(guess, feedback):
         else:
             out.append(f" {ch} ")   # for characters not in word
     print(" ".join(out))
+# End of the use of AI
 
 # utilities? 
 
