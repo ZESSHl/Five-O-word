@@ -89,8 +89,8 @@ def start(words):
 
         else:
             # passes a wrong guess to the top def definer and arranger
-            feedback = definer(secret, guess)
-            arranger(guess, feedback)
+            feedback = definer(secret, guess) # This line is part of def definer
+            arranger(guess, feedback) # This line is part of def arranger
 
             max_try += 1
             tries_left = 7 - max_try
