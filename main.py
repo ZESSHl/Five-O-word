@@ -1,4 +1,4 @@
-import Word_list
+import word_list
 
 def main():
     while True:
@@ -17,15 +17,15 @@ def main():
         # difficulty choice
         if choice == "1":
             import game_easy as game
-            words = Word_list
+            words = word_list
             game.start(words)
         elif choice == "2":
             import game_medium as game
-            words = Word_list
+            words = word_list
             game.start(words)
         elif choice == "3":
             import game_hard as game
-            words = Word_list
+            words = word_list
             game.start(words)
         elif choice == "4":
             print("Game Exited")
